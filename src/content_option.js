@@ -93,32 +93,33 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "https://i0.wp.com/junilearning.com/wp-content/uploads/2020/06/python-programming-language.webp?fit=1920%2C1920&ssl=1",
+    name:"API rest Note App",
+        img: "https://storage.caktusgroup.com/media/blog-images/drf-logo2.png",
         description: "A note-app API that includes Login, functions, database interactions, and enviroment variables.",
         link: "https://github.com/Anubis-2077/rest_api_ready_production",
     },
     {
-        img: "https://th.bing.com/th/id/OIP.K-4RqDC6zFrpAG31ayDDOgHaHa?rs=1&pid=ImgDetMain",
+        name:"Web Store React Site",
+        img: "https://res.cloudinary.com/depr3dqom/image/upload/v1717602017/uc_b4qrkz.png",
         description: "Front-end web store, integrated with Mercado Pago for payment processing.",
         link: "https://github.com/Anubis-2077/webStore",
     },
     {
-        img: "https://i.pinimg.com/originals/28/e6/86/28e686fdf24865f07c3ef7c82741fdba.jpg",
+        name:"Winery Django project ",
+        img: "https://1000logos.net/wp-content/uploads/2020/08/Django-Logo.png",
         description: "A Django-based system for wineries featuring task management, secure login, sales analytics, and production tracking.",
         link: "https://github.com/Anubis-2077/casimiro_project",
     },
     {
-        img: "https://static-00.iconduck.com/assets.00/react-icon-2048x2048-o8k3ymqa.png",
-        description: "Front-end interface for a note-app, leveraging Django REST Framework API.",
+        name:"Creaciones Digitales ",
+        img: "https://res.cloudinary.com/depr3dqom/image/upload/v1717601701/uc_sdv8tl.png",
+        description: "Website for a personal project that is responsible for providing web solutions both in front-end and back-end for small businesses seeking to digitize.",
         link: "https://github.com/Anubis-2077/front_end_notes_app",
     },
+    
     {
-        img: "https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png",
-        description: "First personal portfolio made for local market.",
-        link: "https://github.com/Anubis-2077/Web_personal",
-    },
-    {
-        img: "https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png",
+        name:"Python tests",
+        img: "https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/4e105f96750899.5eb54f337fb8e.png",
         description: "First version of the Sindicato de Panaderos y Pasteleros de San Juan Website",
         link: "https://github.com/Anubis-2077/Sindicato_panaderos_website",
     },

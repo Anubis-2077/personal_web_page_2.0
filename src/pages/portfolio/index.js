@@ -19,20 +19,41 @@ export const Portfolio = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-        <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" />
-                <div className="content">
-                  <p>{data.description}</p>
-                  <a href={data.link} target="blank">view project</a>
+        <div className="row row-cols-1">
+          {dataportfolio.map((project, i) => (
+            <div className="col mb-4" key={i}>
+              <div
+                className={`card card-portfolio d-flex ${
+                  i % 2 === 0 ? "flex-row-reverse" : "flex-row"
+                }`}
+              >
+                <img
+                  src={project.img}
+                  className="card-img-top flex-shrink-0"
+                  
+                  alt={project.description}
+                />
+                <div className="card-body d-flex flex-column justify-content-between">
+                  <div>
+                    <h3 className="card-title">{project.name}</h3>
+                    <h5 className="card-body">{project.description}</h5>
+                  </div>
+                  <a
+                    href={project.link}
+                    className="btn btn-primary mt-auto button-repository"
+                  >
+                    View Project
+                  </a>
                 </div>
               </div>
-            );
-          })}
+              <hr className="divider" />
+            </div>
+          ))}
+          
         </div>
+        
       </Container>
+      
     </HelmetProvider>
   );
 };
