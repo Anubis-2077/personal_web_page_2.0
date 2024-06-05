@@ -13,6 +13,17 @@ const Headermain = () => {
     document.body.classList.toggle("ovhidden");
   };
 
+  const pdfLink = "https://drive.google.com/uc?export=download&id=1nC8pFMCBTyiJJHfNxdec764qunO6kaqA";
+
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = pdfLink;
+    link.download = 'CV Gerardo Morito Escobar.pdf'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
       <header className="fixed-top site__header">
@@ -45,6 +56,9 @@ const Headermain = () => {
                   </li>
                   <li className="menu_item">
                   <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>
+                  </li>
+                  <li className="menu_item">
+                  <Link onClick={handleDownloadCV} to="/contact" className="my-3"> C.V.</Link>
                   </li>
                 </ul>
               </div>
